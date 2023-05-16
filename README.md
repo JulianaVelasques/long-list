@@ -32,7 +32,7 @@
 
   
 ## :page_with_curl: About
-The Long List was created for the frontend test at stark. This is an App using react + tailwind + Typescript that render a list of companies.
+The Long List was created for the frontend test at stark. This is an App using react + tailwind + Typescript that render a list of companies. Take a look here: [Long List website](https://long-list-julianavelasques.vercel.app/)
 
 
 
