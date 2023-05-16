@@ -11,9 +11,9 @@ interface Card {
 
 export default function ListCard({ logo, name, type, date, isDownload }: Card) {
   return (
-    <div className="flex flex-row items-center justify-between p-3 border border-gray-300 rounded-2xl m-4 shadow-md ">
+    <div className="flex flex-row items-center justify-between hover:bg-slate-100 p-3 border border-gray-300 rounded-2xl m-4 shadow-md ">
       <span className="flex flex-row items-center gap-4">
-        <div className="border border-gray-300 rounded-2xl ">
+        <div className="w-[100%] border border-gray-300 rounded-2xl ">
           <img
             src={logo}
             alt={`logo da ${name}`}
@@ -21,8 +21,8 @@ export default function ListCard({ logo, name, type, date, isDownload }: Card) {
             className="rounded-2xl"
           />
         </div>
-        <div>
-          <h2 className="text-[1.4rem] font-medium mb-2 tracking-wider">
+        <div className="w-40 md:w-[100%]">
+          <h2 className="text-[1.4rem] truncate overflow-hidden font-medium mb-2 tracking-wider">
             {name}
           </h2>
           <div className="flex flex-row gap-2 items-center text-sm">
