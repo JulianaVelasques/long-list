@@ -28,7 +28,7 @@ export default function ListCard({ logo, name, type, date, isDownload }: Card) {
           <div className="flex flex-row gap-2 items-center text-sm">
             <div
               className={`${
-                type == 'Crédito' ? 'bg-orange-100' : 'text-blue-100'
+                type == 'Crédito' ? 'bg-orange-100' : 'bg-blue-100'
               }  px-3 py-1 rounded-md`}
             >
               <p
