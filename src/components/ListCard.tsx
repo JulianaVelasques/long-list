@@ -1,12 +1,13 @@
 import download from '../assets/icon/download.svg';
 import lock from '../assets/icon/lock.svg';
 
-interface Card {
-  logo?: string;
-  name: string;
-  type: string;
-  date: string;
-  isDownload: boolean;
+export interface Card {
+  _id?: string;
+  logo?: string | any;
+  name?: string;
+  type?: string;
+  date: Date;
+  isDownload?: boolean;
 }
 
 export default function ListCard({ logo, name, type, date, isDownload }: Card) {
@@ -15,7 +16,7 @@ export default function ListCard({ logo, name, type, date, isDownload }: Card) {
       <span className="flex flex-row items-center gap-4">
         <div className="w-[100%] border border-gray-300 rounded-2xl ">
           <img
-            src={logo}
+            src={`${logo}`}
             alt={`logo da ${name}`}
             width={80}
             className="rounded-2xl"
@@ -39,7 +40,7 @@ export default function ListCard({ logo, name, type, date, isDownload }: Card) {
                 {type}
               </p>
             </div>
-            <p>{date}</p>
+            <p>{new Date(date).toLocaleDateString()}</p>
           </div>
         </div>
       </span>
